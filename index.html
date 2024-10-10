@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Product Shop</title>
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <img class="logo" src="/imagens/beverage_store_logo_transparent.png" alt="">
+            <input class="pesquisa" type="search" placeholder="pesquise aqui">
+            <img src="imagens/shop-cart-svgrepo-com.svg" class="bt-compra" id="bt-compra"></img>
+        </header>
+        
+        <div class="banner">
+            <img src="/imagens/banner-ecommece.jpg" alt="promoção de um whiskey">
+        </div>
+
+        <!--os dados são gerados de forma dinamica no script-->
+        <main id="card" class="card_produtos">
+        </main>
+
+        <footer>
+            <p>Endereço: R. Sem Nome Apenas Ficticio, 000 - centro, <br>Severínia - SP, 14735-000</p>
+            <p>Horário de funcionamento: <br> 
+                domingo 09:00-20.00 <br>
+                segunda-feira 09.00-23.00 <br>
+                terça-feira 09.00-23.00 <br>
+                quarta-feira 09.00-23.00 <br>
+                quinta-feira 09.00-23.00 <br>
+                sexta-feira 09:00-00:00 <br>
+                sábado 09:00-00:00 <br>
+            </p>
+        </footer>
+    </div>
+
+    <!-- pagina lateral carrinho de compras -->
+    <section class="carrinho" id="carrinho">
+        <h3 class="titulo-carrinho">Minhas compras</h3>
+        <button id="bt-fechar" class="bt-fechar">X</button>
+        <button class="removerTudo" id="removerTudo">&#128465; REMOVER TODOS OS PRODUTOS</button>
+        <ul class="lista-produtos" id="lista-produtos">
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

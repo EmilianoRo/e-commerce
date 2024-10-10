@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #181920;
+    color: #333;
+}
+
+.container{
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    background-color: #040406;
+}
+
+.imgCarrinho {
+    width: 50px;
+    height: 100%;
+    color: #fff;
+}
+
+.pesquisa{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.logo{
+    width: auto;
+    height: 100%;
+}
+
+.bt-compra {
+    width: 35px;
+    height: 100%;
+}
+
+.bt-compra:hover{
+    cursor: pointer;
+}
+
+.banner{
+    width: 80%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.card_produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 375px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.produto img {
+    width: 80px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.produto h2 {
+    font-size: 1em;
+    margin: 0;
+    color: #0e0e0e;
+}
+
+.produto p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0e0e0e;
+}
+
+.produto button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #090f31;
+    text-align: center;
+    position:absolute;
+    bottom: 0;
+}
+
+.produto button:hover {
+    background-color: #090f21;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+/*carrinho de compras*/
+.carrinho {
+    width: 350px;
+    height: max-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    display: none;
+}
+
+.titulo-carrinho{
+    background: #004D40;
+    color: #FFF;
+    margin: 0;
+    padding: 10px 0px 10px 0;
+    text-align: center;
+}
+.carrinho ul {
+    list-style: none;
+}
+
+.carrinho ul li {
+    padding: 5px;
+}
+
+.bt-fechar{
+    background-color: #FFF;
+    border: solid #333 1px;
+    color: red;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bt-remover{
+    color: red;
+    background-color: #FFF;
+    font-size: 0.75em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.removerTudo {
+    background-color: #fff;
+    border: red solid 2px;
+    color: red;
+    margin-left: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
